@@ -1,0 +1,13 @@
+server: 
+  port: 8080
+  server.context-path: /
+
+# hive 数据源自定义配置
+spring: 
+  data: 
+    hbase: 
+      quorum: 192.168.2.114
+      rootDir: file:///user/ 
+      nodeParent: /hbase
+      
+

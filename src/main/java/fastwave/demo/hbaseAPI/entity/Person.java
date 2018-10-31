@@ -1,4 +1,4 @@
-package fastwave.demo.hbaseAPI.hbase.mapper;
+package fastwave.demo.hbaseAPI.entity;
 
 public class Person {
 	private String rowKey;

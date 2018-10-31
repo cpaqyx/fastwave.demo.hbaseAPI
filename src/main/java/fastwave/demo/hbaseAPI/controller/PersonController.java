@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import fastwave.demo.hbaseAPI.entity.Person;
 import fastwave.demo.hbaseAPI.entity.ResultEntity;
-import fastwave.demo.hbaseAPI.hbase.mapper.Person;
 import fastwave.demo.hbaseAPI.service.PersonService;
 
 /**

@@ -1,4 +1,4 @@
-package fastwave.demo.hbaseAPI.hbase.mapper;
+package fastwave.demo.hbaseAPI.entity;
 
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.util.Bytes;

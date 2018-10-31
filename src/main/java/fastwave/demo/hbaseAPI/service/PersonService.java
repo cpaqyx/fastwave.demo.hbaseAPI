@@ -5,7 +5,7 @@ import java.util.List;
 import org.apache.hadoop.hbase.client.Mutation;
 import org.apache.hadoop.hbase.client.Put;
 
-import fastwave.demo.hbaseAPI.hbase.mapper.Person;
+import fastwave.demo.hbaseAPI.entity.Person;
 
 public interface PersonService {
 	boolean createTable();

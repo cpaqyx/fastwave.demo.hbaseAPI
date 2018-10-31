@@ -19,8 +19,8 @@ import org.springframework.stereotype.Service;
 import com.spring4all.spring.boot.starter.hbase.api.HbaseTemplate;
 import com.spring4all.spring.boot.starter.hbase.api.TableCallback;
 
-import fastwave.demo.hbaseAPI.hbase.mapper.Person;
-import fastwave.demo.hbaseAPI.hbase.mapper.PersonMapper;
+import fastwave.demo.hbaseAPI.entity.Person;
+import fastwave.demo.hbaseAPI.entity.PersonMapper;
 import fastwave.demo.hbaseAPI.service.PersonService;
 
 @Service

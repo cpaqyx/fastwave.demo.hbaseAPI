@@ -29,7 +29,7 @@ public class baseAPITest {
 	private static String TABLENAME = "student";
 	private static String FAMILY_INFOMATION = "information";
 	private static String FAMILY_CONTACT = "contact";
-	private static String QUORUM = "192.168.2.114"; //集群配置示例："192.168.2.114,192.168.2.115,192.168.2.116"
+	private static String QUORUM = "192.168.5.101"; //集群配置示例："192.168.2.114,192.168.2.115,192.168.2.116"
 	private static String PORT = "2181";
 
 	private static Admin admin;

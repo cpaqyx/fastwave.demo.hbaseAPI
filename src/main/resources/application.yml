@@ -6,7 +6,7 @@ server:
 spring: 
   data: 
     hbase: 
-      quorum: 192.168.2.114
+      quorum: 192.168.5.101
       rootDir: file:///user/ 
       nodeParent: /hbase
       

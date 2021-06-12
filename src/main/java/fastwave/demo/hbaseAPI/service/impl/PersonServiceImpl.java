@@ -37,12 +37,17 @@ public class PersonServiceImpl implements PersonService {
 		try {
 			Connection connection = hbaseTemplate.getConnection();
 			Admin admin = connection.getAdmin();
-			String tableName = "person";
-			if (!admin.isTableAvailable(TableName.valueOf(tableName))) {
-				HTableDescriptor hbaseTable = new HTableDescriptor(TableName.valueOf(tableName));
-				hbaseTable.addFamily(new HColumnDescriptor(tableName));
-				admin.createTable(hbaseTable);
+			String tableName = TABLENAME;
+			
+			// 存在此表则删除，不能用于生产环境
+			if (admin.isTableAvailable(TableName.valueOf(tableName))) {
+				admin.disableTable(TableName.valueOf(tableName));
+				admin.deleteTable(TableName.valueOf(tableName));
 			}
+			
+			HTableDescriptor hbaseTable = new HTableDescriptor(TableName.valueOf(tableName));
+			hbaseTable.addFamily(new HColumnDescriptor(tableName));
+			admin.createTable(hbaseTable);
 		} catch (IOException e) {
 			e.printStackTrace();
 			return false;
